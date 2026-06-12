@@ -1,0 +1,33 @@
+# ===== 데이터·개인정보 (절대 커밋 금지) =====
+*.xlsx
+*.xls
+*.csv
+*.json
+!.claude/launch.json
+
+# 학습된 모델(실데이터 기반) 및 산출물
+knowledge_base.json
+*_예측결과.*
+*_검토용.*
+*_우선순위.*
+*_MES업로드.*
+공정패트롤_*.xlsx
+
+# ===== 파이썬 =====
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# ===== 로그·임시 =====
+*.log
+dash_log.txt
+_*.py
+
+# ===== 에디터/OS =====
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.claude/
