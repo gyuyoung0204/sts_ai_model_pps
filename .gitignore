@@ -3,7 +3,7 @@
 *.xls
 *.csv
 *.json
-!.claude/launch.json
+!harness/config.json
 
 # 학습된 모델(실데이터 기반) 및 산출물
 knowledge_base.json
@@ -30,4 +30,7 @@ _*.py
 .idea/
 .DS_Store
 Thumbs.db
-.claude/
+
+# .claude는 로컬 설정이라 제외하되, PPS 스킬은 저장소에 포함
+.claude/*
+!.claude/skills/

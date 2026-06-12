@@ -1,0 +1,11 @@
+{
+  "history_dir": "data/history",
+  "incoming_dir": "data/incoming",
+  "results_dir": "data/results",
+  "retrain": true,
+  "move_processed": false,
+  "mes": {
+    "enabled": false,
+    "note": "MES 연동 시 여기에 접속정보/테이블/컬럼 매핑을 넣고 run_pipeline.py의 MES 단계를 구현"
+  }
+}

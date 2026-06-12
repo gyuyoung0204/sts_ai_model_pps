@@ -91,3 +91,13 @@ result = API.score_records([
 | `score_file.py` | 단일 파일 채점 |
 | `mes_pipeline.py` | 학습+채점 통합 실행기 |
 | `dashboard.py` | Streamlit 대시보드 |
+| `.claude/skills/pps/` | Claude Code 스킬 (자연어로 예측·재학습·설명) |
+| `harness/` | 자동화 하네스(스케줄러 파이프라인) + 에이전트 도구 래퍼 |
+
+## 자동화 (하네스)
+
+매달 사람 개입 없이 수집→재학습→예측→출력까지 자동 실행:
+```bash
+python harness/run_pipeline.py     # data/incoming 예측 → data/results 저장
+```
+폴더 구조·스케줄러 등록은 [harness/README.md](harness/README.md) 참고.
